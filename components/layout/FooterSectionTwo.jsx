@@ -1,10 +1,12 @@
 import React from 'react'
 import Image from 'next/image'
+import Wrapper from './Wrapper'
 
 export default function FooterSectionTwo() {
     return (
         <>
             <div className='bg-tum-blue-dark'>
+            <Wrapper>
                 <div className='pt-10 px-5 flex space-x-5'>
                     <Image src="/assets/icons/soc-facebook.svg" alt="image" className='' width={20} height={20} />
                     <Image src="/assets/icons/soc-youtube.svg" alt="image" className='' width={20} height={20} />
@@ -63,6 +65,7 @@ export default function FooterSectionTwo() {
                         <p className='text-xs leading-5'>Airbus · Altana · Audi · Bayerischer<span id="nbsp">&nbsp;</span>Bauindustrieverband · BMW · Bosch · Busch Vacuum&nbsp;· Clariant · Dräxlmaier · Evonik Industries · Google · Herrenknecht · HUAWEI · Infineon · Linde · MAN · Nestlé · Rohde<span id="nbsp">&nbsp;</span>&amp;<span id="nbsp">&nbsp;</span>Schwarz · RWE · SAP · SGL Carbon · Siemens · TRUMPF · TÜV-Süd · Vereinigung der Bayerischen Wirtschaft · Volkswagen · Wacker Chemie</p>
                     </div>
                 </div>
+                </Wrapper>
             </div>
         </>
     )

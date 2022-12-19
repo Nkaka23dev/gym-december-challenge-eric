@@ -8,7 +8,7 @@ export default function Header() {
       <div className='bg-header-gradient py-[3.75rem] mt-20 md:hidden'>
         <Wrapper>
       <div>
-        <h1 class="text-[2.25rem] text-white font-extrabold leading-10">TUM. The Entrepreneurial <br></br> University</h1>
+        <h1 className="text-[2.25rem] text-white font-extrabold leading-10">TUM. The Entrepreneurial <br></br> University</h1>
         <p className='text-white text-[1.25rem] mt-[1.5rem]'>Innovation through talent,<br></br> excellence and responsibility</p>
       </div>
         </Wrapper>
