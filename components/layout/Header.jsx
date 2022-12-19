@@ -16,8 +16,8 @@ export default function Header() {
       {/* Video is dow her. */}
 
       <div className='relative flex items-center justify-center h-60 md:h-screen overflow-hidden md:mt-20 '>
-        <div className='absolute right-0 bottom-0 z-30 p-5 text-2xl text-white bg-purple-300 bg-opacity-50 rounded-xl'>
-          button
+        <div className='absolute right-10 bottom-10 z-30 p-5 text-sm text-white bg-tum-blue-dark-3 '>
+          btn
         </div>
         <Wrapper>
         <div className='hidden md:block absolute left-5 top-20 z-30 text-white ' >
