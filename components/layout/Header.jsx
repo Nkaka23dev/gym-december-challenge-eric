@@ -21,7 +21,7 @@ export default function Header() {
         </div>
         <Wrapper>
         <div className='hidden md:block absolute left-5 top-20 z-30 text-white ' >
-          <h1 class="text-[2.25rem] text-white font-extrabold leading-10 md:leading-[2.7rem] text-5xl">TUM. The Entrepreneurial <br></br>University</h1>
+          <h1 className="text-[2.25rem] text-white font-extrabold leading-10 md:leading-[2.7rem] text-5xl">TUM. The Entrepreneurial <br></br>University</h1>
           <p className='text-white text-[1.25rem] mt-[1.5rem] '>Innovation through talent,<br className='block md:hidden' ></br> excellence and responsibility</p>
         </div>
         </Wrapper>
