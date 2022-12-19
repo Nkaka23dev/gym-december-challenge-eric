@@ -11,7 +11,6 @@ module.exports = {
         'josephine': ['Josefin Sans']
       },
       colors: {
-        'primary': '#c69963',
         'tum-blue-brand': '#3070B3',
         'tum-blue-dark': '#072140',
         'tum-blue-dark-1': '#0A2D57',
@@ -74,7 +73,11 @@ module.exports = {
       },
       spacing: {
         '4.5': '4.5rem',
-      }
+      },
+     backgroundImage: {
+       "header-gradient": "linear-gradient(to left, rgb(37, 85, 141) 0%, #0A2D57 70%)",
+       "gradient": "linear-gradient(to right, #20252A 0%, #FFF 70%)",
+      },
     },
   },
   plugins: [],
