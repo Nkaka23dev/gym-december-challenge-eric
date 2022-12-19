@@ -5,10 +5,11 @@ import FooterSectionTwo from './FooterSectionTwo'
 
 export default function Footer() {
   return (
-      <div>
+      <div className='md:text-xs'>
         <div className='bg-tum-blue-dark-1'>
         <Wrapper>
-         <div className='flex items-start py-10 px-5 space-x-8'>
+          <div className='md:flex md:justify-between md:border-b md:items-start md:px-10 '>
+         <div className='flex items-start py-10 tracking-wider space-x-8'>
           <Image src="/assets/icons/tum-logo.svg" alt="image" className='' width={60} height={60} />
           <div className='text-white space-y-8'>
           <p>
@@ -24,7 +25,7 @@ export default function Footer() {
           </p>
           </div>
          </div>
-          <div className="text-white font-bold space-y-3">
+          <div className="text-white md:py-10 font-bold space-y-3">
             <h2 className="">
               Let shape the future together.
             </h2>
@@ -37,8 +38,7 @@ export default function Footer() {
               </li>
             </ul>
           </div>
-          
-          <div className="text-white py-16 border-b border-white">
+          <div className="text-white md:py-10 py-16 md:border-none border-b border-white">
 
             <h2 className="font-bold text-lg">Latest news</h2>
             <ul className="flex-col items-start space-y-5 mt-5 ">
@@ -53,7 +53,7 @@ export default function Footer() {
               <li className='flex gap-4 items-start'>
                 <Image src="/assets/icons/inn.svg" alt="image" className='' width={20} height={20} />
                 <a title="TUM partners with Nobel Sustainability Trust" href="/en/news-and-events/all-news/press-releases/details/tum-kooperiert-mit-nobel-sustainability-trust">
-                  TUM partners with Nobel Sustainability <br></br>  Trust
+                  TUM partners with Nobel Sustainability <br className='block md:hidden' ></br>  Trust
                 </a>
               </li>
 
@@ -65,28 +65,29 @@ export default function Footer() {
               </li>
             </ul>
           </div>
+          </div>
           {/* Footer next Division */}
-          <div className="text-white py-6">
+          <div className="text-white py-6 md:flex md:items-baseline">
             <div className="py-5">
-              <h2 className='text-sm font-bold tracking-wider'>Schools and Departments:</h2>
+              <h2 className='text-sm font-bold tracking-wider md:tracking-normal'>Schools and Departments:</h2>
             </div>
             <div>
-              <ul className="space-y-3">
-                <li className='text-sm flex space-x-2'>
+              <ul className="space-y-3  md:flex md:items-center">
+                <li className='text-sm flex space-x-2 md:space-x-0 w-full  md:text-[0.8rem]'>
                   <a href="https://www.cit.tum.de/en/" target="_blank" rel="noreferrer">
                     Computation, Information and Technology
                   </a>
                   <Image src="/assets/icons/imm.svg" alt="image" className='' width={16} height={16} />
                 </li>
 
-                <li className='text-sm flex space-x-2'>
+                <li className='text-sm flex space-x-2 w-full md:items-center'>
                   <a href="https://www.ed.tum.de/en/" target="_blank" rel="noreferrer">
                     Engineering and Design
                   </a>
                   <Image src="/assets/icons/imm.svg" alt="image" className='' width={16} height={16} />
                 </li>
 
-                <li className='text-sm flex space-x-2'>
+                <li className='text-sm flex space-x-2 w-full md:items-center'>
                   <a href="https://www.nat.tum.de/en/nat" target="_blank" rel="noreferrer" className='flex gap-2'>
                     <span>Natural Sciences</span>
                     <Image src="/assets/icons/imm.svg" alt="image" className='' width={16} height={16} />
@@ -96,21 +97,21 @@ export default function Footer() {
                     <Image src="/assets/icons/imm.svg" alt="image" className='' width={16} height={16} />
                   </a>
                 </li>
-                <li className='text-sm flex space-x-2'>
+                <li className='text-sm flex space-x-2 md:space-x-0 w-full  md:text-[0.8rem]'>
                   <a href="https://www.mgt.tum.de/" target="_blank" rel="noreferrer">
                     Management
                   </a>
                   <Image src="/assets/icons/imm.svg" alt="image" className='' width={16} height={16} />
                 </li>
 
-                <li className='text-sm flex space-x-2'>
+                <li className='text-sm flex space-x-2 md:space-x-0 w-full  md:text-[0.8rem]'>
                   <a href="https://www.sot.tum.de/en/" target="_blank" rel="noreferrer">
                     Social Sciences and Technology
                   </a>
                   <Image src="/assets/icons/imm.svg" alt="image" className='' width={16} height={16} />
                 </li>
 
-                <li className='text-sm flex space-x-2'>
+                <li className='text-sm flex space-x-2 md:space-x-0 w-full  md:text-[0.8rem]'>
                   <a href="https://www.med.tum.de/en" target="_blank" rel="noreferrer" className='flex gap-2' >
                     <span> Medicine</span>
                     <Image src="/assets/icons/imm.svg" alt="image" className='' width={16} height={16} />
@@ -129,7 +130,7 @@ export default function Footer() {
               <h2 className='text-sm font-bold tracking-wider'>Quick Links:</h2>
             </div>
             <div>
-              <ul className="space-y-3">
+              <ul className="space-y-3 md:flex">
                 <li className='text-sm flex space-x-2'>
                   <a href="https://www.nat.tum.de/en/nat" target="_blank" rel="noreferrer" className='flex gap-2'>
                     <span> Persons(TUMonline)</span>
@@ -172,8 +173,6 @@ export default function Footer() {
         </div>
         {/* Second footer division */}
         <FooterSectionTwo/>
-        <div></div>
-        <div></div>
       </div>
     // <div className='text-sm text-green-700'>Footer Components is here</div>
   )

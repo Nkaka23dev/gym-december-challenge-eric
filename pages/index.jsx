@@ -1,6 +1,7 @@
 import Header from "../components/layout/Header";
 import News from "../components/sections/News";
 import Head from 'next/head'
+import CTA from "../components/sections/CTA";
 
 export default function Home() {
   return (
@@ -11,6 +12,7 @@ export default function Home() {
 </Head>
  <Header/>
  <News/>
+ <CTA/>
   </>
   )
 } 

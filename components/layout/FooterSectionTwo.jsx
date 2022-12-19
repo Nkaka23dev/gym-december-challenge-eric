@@ -13,7 +13,7 @@ export default function FooterSectionTwo() {
                     <Image src="/assets/icons/soc-linkedin.svg" alt="image" className='' width={20} height={20} />
                     <Image src="/assets/icons/soc-twitter.svg" alt="image" className='' width={20} height={20} />
                 </div>
-                <div class="text-white">
+                <div className="text-white">
                     <ul className='space-y-2 px-5 pt-4'>
                         <div className='flex space-x-3'>
                             <li>
